@@ -1,2 +1,2 @@
-# couleurust
-CouleurRust a repo for color analysis using rust
+# couleur
+Couleur is a repo for color analysis using rust
