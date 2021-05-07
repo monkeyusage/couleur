@@ -16,12 +16,8 @@ pub fn resize(file: path::PathBuf) {
     img.save(path_name).unwrap();
 }
 
-pub fn measure(file: path::PathBuf) -> f32 {
-    let img = ImageReader::open(&file).unwrap().decode().unwrap();
-    let pixels = img.as_rgb16().unwrap().to_vec();
-    let mut total : u16 = 0;
-    for pixel in pixels {
-        total += pixel;
-    };
-    total / pixels.len()
+pub fn read(file: path::PathBuf) -> image::ImageBuffer<image::Rgb<u8>, std::vec::Vec<u8>> {
+    let bytes = ImageReader::open(&file).unwrap().decode().unwrap();
+    let data = bytes.as_rgb8().unwrap().to_owned();
+    data
 }
