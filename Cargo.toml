@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["monkey usage <monkeyusage@gmail.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-image = "0.23.2"
+image = "0.23.14"
 rayon = "0.6.0"
+smartcore = "0.2.0"
