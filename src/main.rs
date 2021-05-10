@@ -1,5 +1,5 @@
 mod couleur;
 
 fn main() {
-    couleur::kmeans();
+    couleur::resize();
 }
