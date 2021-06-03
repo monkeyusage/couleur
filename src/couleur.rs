@@ -50,12 +50,10 @@ mod img {
 }
 
 use rayon::prelude::*;
-use std::vec;
 
 pub fn resize() {
     let files_vec = files::read_img_paths(r"data\img").unwrap();
-    let _images: vec::Vec<()> = files_vec
+    files_vec
         .par_iter()
-        .map(|f| img::resize(f.to_path_buf()))
-        .collect();
+        .for_each(|f| img::resize(f.to_path_buf()));
 }

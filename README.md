@@ -1,2 +1,2 @@
 # couleur
-Couleur is a repo for color analysis using rust
+Couleur is a repo for color analysis using rust & python

@@ -11,3 +11,4 @@ Cargo.lock
 venv/
 data/
 .vscode/
+__pycache__
